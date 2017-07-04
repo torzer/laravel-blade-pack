@@ -1,0 +1,28 @@
+{
+    "name": "torzer/laravel-blade-pack",
+    "description": "Laravel package with Blade extensions and directives for torzer projects",
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "torzer",
+            "email": "torzer@torzer.com"
+        },
+        {
+            "name": "Ademir Mazer Junior",
+            "email": "mazer@torzer.com"
+        },
+        {
+            "name": "Oseas Tormen",
+            "email": "tormen@torzer.com"
+        }
+    ],
+    "require": {
+        "laravel/framework": ">=5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Torzer\\Common\\Blade\\": "src/"
+        }
+    }
+}
