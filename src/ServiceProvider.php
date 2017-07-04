@@ -8,7 +8,7 @@ class ServiceProvider extends LaravelServiceProvider
 {
 
     public function register() {
-        
+
     }
 
 
@@ -17,7 +17,7 @@ class ServiceProvider extends LaravelServiceProvider
         foreach ($this->getDirectives() as $directive) {
             $d = new $directive;
 
-            Blade::directive($d->getName(), function($expression) use($d){
+            \Blade::directive($d->getName(), function($expression) use($d){
                 return $d->getSource($expression);
             });
         }
