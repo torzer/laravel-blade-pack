@@ -28,6 +28,7 @@ class ServiceProvider extends LaravelServiceProvider
         return [
             Directives\Dd::class,
             Directives\Dump::class,
+            Directives\Set::class,
         ];
     }
 

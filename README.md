@@ -47,3 +47,17 @@ The `var_dump` function as a Blade directive.
 ```
 @dump($var)
 ```
+
+### set
+
+A Blade directive to set value to a PHP variable.
+
+```
+@set(5, $var)
+
+// then you can keep using the var in the same Blade view
+@if($var > 10)
+   ...
+@endif
+
+```
