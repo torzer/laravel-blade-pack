@@ -61,3 +61,18 @@ A Blade directive to set value to a PHP variable.
 @endif
 
 ```
+
+### setJs
+
+A Blade directive to set a PHP Laravel value accessible as a JS variable.
+
+```
+@js(token,$token)
+```
+
+Then you can access these data from window object in javascript
+
+```
+window.token
+
+```
