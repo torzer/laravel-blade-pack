@@ -34,8 +34,16 @@ In `config/app.php` file, in array `providers` :
 
 ### dd
 
-The `dd` function as a Blade directive.
+The `dd` (dump and die) function as a Blade directive.
 
 ```
 @dd($var)
+```
+
+### dump
+
+The `var_dump` function as a Blade directive.
+
+```
+@dump($var)
 ```

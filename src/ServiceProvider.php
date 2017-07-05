@@ -27,6 +27,7 @@ class ServiceProvider extends LaravelServiceProvider
     protected function getDirectives() {
         return [
             Directives\Dd::class,
+            Directives\Dump::class,
         ];
     }
 
