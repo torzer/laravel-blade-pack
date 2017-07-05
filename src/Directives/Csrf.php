@@ -7,15 +7,10 @@ namespace Torzer\Common\Blade\Directives;
  *
  * @author Ademir Mazer Jr <mazer@torzer.com>
  */
-class Csrf
+class Csrf extends Base
 {
 
     protected $name = 'csrf';
-
-    public function getName()
-    {
-        return $this->name;
-    }
 
     public function getSource($expression)
     {

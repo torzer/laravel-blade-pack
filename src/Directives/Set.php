@@ -7,18 +7,13 @@ namespace Torzer\Common\Blade\Directives;
  *
  * @author Ademir Mazer Jr <mazer@torzer.com>
  */
-class Set
+class Set extends Base
 {
 
     protected $name = 'set';
 
-    public function getName()
-    {
-        return $this->name;
-    }
-
     public function getSource($expression) {
-        list($variable, $value) = explode(',', $expression, 2);
+        list($variable, $value) = $this->getArguments($expression);
 
         // Ensure variable has no spaces or apostrophes
         $variable = trim(str_replace('\'', '', $variable));

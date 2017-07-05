@@ -7,15 +7,10 @@ namespace Torzer\Common\Blade\Directives;
  *
  * @author Ademir Mazer Jr <mazer@torzer.com>
  */
-class Dd
+class Dd extends Base
 {
 
     protected $name = 'dd';
-
-    public function getName()
-    {
-        return $this->name;
-    }
 
     public function getSource($expression) {
         return "<?php dd({$expression}); ?>";

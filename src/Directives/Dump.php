@@ -7,15 +7,10 @@ namespace Torzer\Common\Blade\Directives;
  *
  * @author Ademir Mazer Jr <mazer@torzer.com>
  */
-class Dump
+class Dump extends Base
 {
 
     protected $name = 'dump';
-
-    public function getName()
-    {
-        return $this->name;
-    }
 
     public function getSource($expression) {
         return "<?php var_dump({$expression}); ?>";

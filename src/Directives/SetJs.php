@@ -7,19 +7,14 @@ namespace Torzer\Common\Blade\Directives;
  *
  * @author Ademir Mazer Jr <mazer@torzer.com>
  */
-class SetJs
+class SetJs extends Base
 {
 
     protected $name = 'setJs';
 
-    public function getName()
-    {
-        return $this->name;
-    }
-
     public function getSource($expression)
     {
-        list($var, $data) = explode(',', str_replace(['(', ')', ' ', "'"], '', $arguments));
+        list($var, $data) = $this->getArguments($expression);
         return "<?php echo \"<script>window['{$var}']= {$data};</script>\" ?>";
     }
 
