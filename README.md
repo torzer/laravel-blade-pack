@@ -69,6 +69,22 @@ The `var_dump` function as a Blade directive.
 @dump($var)
 ```
 
+### explode
+
+The explode function as a Blade directive.
+
+```
+@explode(',', $string)
+```
+
+### implode
+
+The implode function as a Blade directive.
+
+```
+@implode(',', $array)
+```
+
 ### set
 
 A Blade directive to set value to a PHP variable.

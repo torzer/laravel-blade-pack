@@ -7,16 +7,16 @@ namespace Torzer\Common\Blade\Directives;
  *
  * @author Ademir Mazer Jr <mazer@torzer.com>
  */
-class Implode extends Base
+class Explode extends Base
 {
 
-    protected $name = 'implode';
+    protected $name = 'explode';
 
     public function getSource($expression)
     {
-        list($delimiter, $array) = $this->getArguments($expression);
+        list($delimiter, $string) = $this->getArguments($expression);
 
-        return "<?php echo implode({$delimiter}, {$array}); ?>";
+        return "<?php echo explode({$delimiter}, {$string}); ?>";
     }
 
 }

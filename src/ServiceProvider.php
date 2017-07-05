@@ -29,6 +29,7 @@ class ServiceProvider extends LaravelServiceProvider
             Directives\Csrf::class,
             Directives\Dd::class,
             Directives\Dump::class,
+            Directives\Explode::class,
             Directives\Implode::class,
             Directives\Set::class,
             Directives\SetJs::class,
