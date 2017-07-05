@@ -32,6 +32,27 @@ In `config/app.php` file, in array `providers` :
 
 ## Directives
 
+### csrf
+
+A directive to remove all the csrf from the layout.
+
+```php
+@csrf()
+```
+
+Access with Javascript as `window.Laravel.csrfToken`.
+
+If you need to change the namespace to something different than `window.Laravel`.
+
+```php
+@csrf('Torzer')
+```
+Would set it in
+
+```js
+window.Torzer.csrfToken
+```
+
 ### dd
 
 The `dd` (dump and die) function as a Blade directive.
