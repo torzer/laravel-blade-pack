@@ -16,7 +16,11 @@ class Implode extends Base
     {
         list($delimiter, $array) = $this->getArguments($expression);
 
-        return "<?php echo implode({$delimiter}, {$array}); ?>";
+        if (is_array($array)) {
+            return "<?php echo implode({$delimiter}, {$array}); ?>";
+        } else {
+            return "<?php echo {$array}; ?>";
+        }
     }
 
 }
